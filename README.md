@@ -26,9 +26,9 @@ Chair of the FED, Jerome Powell, spoke on plans for the near future at the Janua
 To determine how the FED will play with interest rates, we will forecast the growth of employment over the next 12 months using the first difference of total employees(nonfarm).  As we know, normal levels of growth range from about 50,000 to 110,000 new jobs every month, and if there is a sustained amount of above trend job growth, unemployment will be pulled below the natural rate.  The level of growth over trend we will be looking for is the 200,000 mark, that can possibly indicate a point where the FED will decide to intervene.  With the FED’s dual mandate of maximum employment and price stability, they will be watching unemployment closely to help determine whether or not they will cut rates. I will also be controlling for pandemic data since it distorts historic data and would have a noticeable impact on the forecast.  
 
 ## Econometric Analysis:
-
-<img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_1.png" width="60%">
-
+<p align="center">
+  <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_1.png" width="70%">
+</p>p
 The first test demonstrates autoregressive behavior, evident in the gradual decay of autocorrelations over time. The slow decline suggests persistence in the data, where current values are strongly influenced by prior observations, indicative of a high degree of temporal dependence.
 
 ```
@@ -63,24 +63,39 @@ Variable                        Coeff      Std Error      T-Stat      Signif
 6\.  MA{3}                           0.1071429    0.0632092      1.69505  0.09112404  
 ```
 
-![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_2.png)![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_3.png)
-![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_4.png)
+<p align="center">
+  <img src = "https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_2.png" width="35%">
+  <img src = "https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_3.png" width="35%">
+</p>
+
+<p align="center">
+  <img src = "https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_4.png" width="70%">
+</p>
 
 Through analysis of the residuals of our model we can firstly reject our null hypothesis that the autocorrelations of our model jointly \= 0\.  We can also reject the null hypothesis that the residuals are normal.  Our AR and MA roots are all less than 1 so we know that our model is invertible and covariance stationary.
 
-![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png)
 
 ## Forecast Results
 
 **Forecast 1:**
 
-Our first forecast is a one step ahead forecast, showing how our model is able to predict recent data.  We see that most of the data of the last 2 years falls within our 95% confidence interval.
-
-![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_6.png)
+<div style="display: flex; align-items: center;">
+  <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png" width="35%" style="margin-right: 20px;">
+  <p>
+    Our first forecast is a one step ahead forecast, showing how our model is able to predict recent data.  We see that most of the data of the last 2 years falls within our 95% confidence interval.
+  </p>
+</div>
 
 **Forecast 2:**
 
-In our second forecast we predict the level of employment for the year of 2024.  The model predicts that February job growth will be over the 200,000 mark and also showing a predicted sustained trend above the normal range of job growth.  Despite this, our error band is still quite large and so we can’t predict with certainty that this will be the case over the next year, especially depending on how the FED reacts to upcoming inflation numbers.
+<div style="display: flex; align-items: center;">
+  <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_6.png" width="35%" style="margin-right: 20px;">
+  <p>
+    In our second forecast we predict the level of employment for the year of 2024.  The model predicts that February job growth will be over the 200,000 mark and also showing a predicted    sustained trend above the normal range of job growth.  Despite this, our error band is still quite large and so we can’t predict with certainty that this will be the case over the next year, especially depending on how the FED reacts to upcoming inflation numbers.
+  </p>
+</div>
+
+
 
 forecast for 2024:01     213.01329
 
