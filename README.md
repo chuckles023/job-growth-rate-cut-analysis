@@ -83,14 +83,14 @@ Variable                        Coeff      Std Error      T-Stat      Signif
 ## Forecast Results
 
 **Forecast 1:**
-<figure align="center">
-  <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png" width="60%">
+<figure style="text-align: center;">
+  <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png" width="45%">
   <figcaption>Our first forecast is a one-step ahead forecast, showing how our model is able to predict recent data. We see that most of the data of the last 2 years falls within our 95% confidence interval.</figcaption>
 </figure>
-
+<br>
 **Forecast 2:**
-<figure align="center">
-  <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_6.png" width="60%">
+<figure style="text-align: center;">
+  <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_6.png" width="45%">
   <figcaption>In our second forecast, we predict the level of employment for the year of 2024. The model predicts that February job growth will be over the 200,000 mark and also shows a predicted sustained trend above the normal range of job growth. Despite this, our error band is still quite large, so we can’t predict with certainty that this will be the case over the next year, especially depending on how the FED reacts to upcoming inflation numbers..</figcaption>
 </figure>
 
@@ -108,7 +108,7 @@ Variable                        Coeff      Std Error      T-Stat      Signif
     <td style="font-weight: bold; text-align: right;">0.93740</td>
   </tr>
 </table>
-
+<br>
 
 ## Conclusion:
 
