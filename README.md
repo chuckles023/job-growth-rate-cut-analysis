@@ -34,6 +34,7 @@ To determine how the FED will play with interest rates, we will forecast the gro
 </p>
 The first test demonstrates autoregressive behavior, evident in the gradual decay of autocorrelations over time. The slow decline suggests persistence in the data, where current values are strongly influenced by prior observations, indicative of a high degree of temporal dependence.
 
+
 ```
 Box-Jenkins \- Estimation by ML Gauss-Newton 
 Convergence in    14 Iterations. 
@@ -81,12 +82,12 @@ Through analysis of the residuals of our model we can firstly reject our null hy
 ## Forecast Results
 
 **Forecast 1:**
-<table>
-  <tr>
-    <td>
-      <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png" width="40%">
+<table style = "border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td style="border:none;">
+      <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png" >
     </td>
-    <td>
+    <td style="border:none;">
       <p>
         Our first forecast is a one-step ahead forecast, showing how our model is able to predict recent data. We see that most of the data of the last 2 years falls within our 95% confidence interval.
       </p>
@@ -96,12 +97,12 @@ Through analysis of the residuals of our model we can firstly reject our null hy
 
 **Forecast 2:**
 
-<table>
-  <tr>
-    <td>
-      <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_6.png" width="40%">
+<table style = "border-collapse: collapse; border: none;">
+  <tr style="border:none;">
+    <td style="border:none;">
+      <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_6.png" >
     </td>
-    <td>
+    <td style="border:none;">
       <p>
         In our second forecast we predict the level of employment for the year of 2024.  The model predicts that February job growth will be over the 200,000 mark and also showing a predicted sustained trend above the normal range of job growth.  Despite this, our error band is still quite large and so we can’t predict with certainty that this will be the case over the next year, especially depending on how the FED reacts to upcoming inflation numbers.
       </p>
@@ -109,11 +110,11 @@ Through analysis of the residuals of our model we can firstly reject our null hy
   </tr>
 </table>
 
-forecast for 2024:01     213.01329
+Forecast prediction for 2024:01     **213.01329**
 
-probability that actual outcome is equal to or less than 200,000:       0.06260
+Probability that actual outcome is equal to or less than 200,000:       **0.06260**
 
-probability that actual outcome is equal to or more than 200,000:       0.93740
+Probability that actual outcome is equal to or more than 200,000:       **0.93740**
 
 
 ## Conclusion:
