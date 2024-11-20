@@ -83,11 +83,12 @@ Variable                        Coeff      Std Error      T-Stat      Signif
 ## Forecast Results
 
 **Forecast 1:**
-
 <table style="width: 100%; border-collapse: collapse;">
   <tr>
     <td style="width: 50%; padding-right: 20px; vertical-align: top;">
-      <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png" width="100%">
+      <div style="max-width: 100%; display: block;">
+        <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png" style="width: 100%; max-width: 500px;">
+      </div>
     </td>
     <td style="width: 50%; vertical-align: top; padding-left: 20px;">
       <p>
@@ -103,15 +104,18 @@ Variable                        Coeff      Std Error      T-Stat      Signif
 <table style="width: 100%; border-collapse: collapse;">
   <tr>
     <td style="width: 50%; padding-right: 20px; vertical-align: top;">
-      <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_6.png" width="100%">
+      <div style="max-width: 100%; display: block;">
+        <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_6.png" style="width: 100%; max-width: 500px;">
+      </div>
     </td>
     <td style="width: 50%; vertical-align: top; padding-left: 20px;">
       <p>
-        In our second forecast we predict the level of employment for the year of 2024.  The model predicts that February job growth will be over the 200,000 mark and also showing a predicted sustained trend above the normal range of job growth. Despite this, our error band is still quite large and so we can’t predict with certainty that this will be the case over the next year, especially depending on how the FED reacts to upcoming inflation numbers.
+        In our second forecast, we predict the level of employment for the year of 2024. The model predicts that February job growth will be over the 200,000 mark and also shows a predicted sustained trend above the normal range of job growth. Despite this, our error band is still quite large, so we can’t predict with certainty that this will be the case over the next year, especially depending on how the FED reacts to upcoming inflation numbers.
       </p>
     </td>
   </tr>
 </table>
+
 
 
 
