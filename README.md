@@ -32,7 +32,8 @@ To determine how the FED will play with interest rates, we will forecast the gro
 <p align="center">
   <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_1.png" width="70%">
 </p>
-The first test demonstrates autoregressive behavior, evident in the gradual decay of autocorrelations over time. The slow decline suggests persistence in the data, where current values are strongly influenced by prior observations, indicative of a high degree of temporal dependence.
+
+**Interpretation** The first test demonstrates autoregressive behavior, evident in the gradual decay of autocorrelations over time. The slow decline suggests persistence in the data, where current values are strongly influenced by prior observations, indicative of a high degree of temporal dependence.
 
 
 ```
@@ -76,18 +77,18 @@ Variable                        Coeff      Std Error      T-Stat      Signif
   <img src = "https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_4.png" width="70%">
 </p>
 
-Through analysis of the residuals of our model we can firstly reject our null hypothesis that the autocorrelations of our model jointly \= 0\.  We can also reject the null hypothesis that the residuals are normal.  Our AR and MA roots are all less than 1 so we know that our model is invertible and covariance stationary.
+**Interpretation** Through analysis of the residuals of our model we can firstly reject our null hypothesis that the autocorrelations of our model jointly \= 0\.  We can also reject the null hypothesis that the residuals are normal.  Our AR and MA roots are all less than 1 so we know that our model is invertible and covariance stationary.
 
 
 ## Forecast Results
 
 **Forecast 1:**
-<table style = "border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td style="border:none;">
-      <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png" >
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td style="width: 50%; padding-right: 20px;">
+      <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png" width="100%">
     </td>
-    <td style="border:none;">
+    <td style="width: 50%; vertical-align: top;">
       <p>
         Our first forecast is a one-step ahead forecast, showing how our model is able to predict recent data. We see that most of the data of the last 2 years falls within our 95% confidence interval.
       </p>
@@ -95,14 +96,15 @@ Through analysis of the residuals of our model we can firstly reject our null hy
   </tr>
 </table>
 
+
 **Forecast 2:**
 
-<table style = "border-collapse: collapse; border: none;">
-  <tr style="border:none;">
-    <td style="border:none;">
-      <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_6.png" >
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td style="width: 50%; padding-right: 20px;">
+      <img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_6.png" width="100%">
     </td>
-    <td style="border:none;">
+    <td style="width: 50%; vertical-align: top;">
       <p>
         In our second forecast we predict the level of employment for the year of 2024.  The model predicts that February job growth will be over the 200,000 mark and also showing a predicted sustained trend above the normal range of job growth.  Despite this, our error band is still quite large and so we can’t predict with certainty that this will be the case over the next year, especially depending on how the FED reacts to upcoming inflation numbers.
       </p>
@@ -110,11 +112,20 @@ Through analysis of the residuals of our model we can firstly reject our null hy
   </tr>
 </table>
 
-Forecast prediction for 2024:01     **213.01329**
-
-Probability that actual outcome is equal to or less than 200,000:       **0.06260**
-
-Probability that actual outcome is equal to or more than 200,000:       **0.93740**
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td>Forecast prediction for 2024:01</td>
+    <td style="font-weight: bold; text-align: right;">213.01329</td>
+  </tr>
+  <tr>
+    <td>Probability that actual outcome is equal to or less than 200,000</td>
+    <td style="font-weight: bold; text-align: right;">0.06260</td>
+  </tr>
+  <tr>
+    <td>Probability that actual outcome is equal to or more than 200,000</td>
+    <td style="font-weight: bold; text-align: right;">0.93740</td>
+  </tr>
+</table>
 
 
 ## Conclusion:
