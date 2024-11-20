@@ -1,4 +1,4 @@
-#Labor Market FED Cut Analysis
+# Labor Market FED Cut Analysis
 
 February 23, 2024
 
@@ -34,7 +34,8 @@ shows autoregressive behavior with slow decay of autocorrealtions
 | Box-Jenkins \- Estimation by ML Gauss-Newton Convergence in    14 Iterations. Final criterion was  0.0000052 \<=  0.0000100 Dependent Variable PAYEMS Monthly Data From 1995:01 To 2019:12 Usable Observations                       300 Degrees of Freedom                        294 Centered R^2                        0.6724300 R-Bar^2                             0.6668591 Uncentered R^2                      0.7534654 Mean of Dependent Variable       118.72000000 Std Error of Dependent Variable  207.41989210 Standard Error of Estimate       119.71936507 Sum of Squared Residuals         4213821.5536 Log Likelihood                     \-1858.9551 Durbin-Watson Statistic                2.0011 Q(36-5)                               47.0418 Significance Level of Q             0.0324401     Variable                        Coeff      Std Error      T-Stat      Signif \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* 1\.  CONSTANT                      127.2729807   61.6278070      2.06519  0.03978164 2\.  AR{1}                           0.0206967    0.0628132      0.32950  0.74201479 3\.  AR{2}                           0.8740963    0.0618505     14.13240  0.00000000 4\.  MA{1}                           0.3606328    0.0838646      4.30018  0.00002325 5\.  MA{2}                          \-0.4769476    0.0705479     \-6.76062  0.00000000 6\.  MA{3}                           0.1071429    0.0632092      1.69505  0.09112404  |
 | :---- |
 
-![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_2.png)![]([)](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_3.png)![]([)](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_4.png)
+![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_2.png)![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_3.png)
+![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_4.png)
 
 Through analysis of the residuals of our model we can firstly reject our null hypothesis that the autocorrelations of our model jointly \= 0\.  We can also reject the null hypothesis that the residuals are normal.  Our AR and MA roots are all less than 1 so we know that our model is invertible and covariance stationary.
 
@@ -62,15 +63,13 @@ In our second forecast we predict the level of employment for the year of 2024. 
 
 **Sources:**
 
-1. [**https://www.frbsf.org/economic-research/publications/economic-**](https://www.frbsf.org/economic-research/publications/economic-)
+1. [**https://www.frbsf.org/research-and-insights/publications/economic-letter/2016/10/trend-job-growth-where-is-normal/**]([https://www.frbsf.org/economic-research/publications/economic-](https://www.frbsf.org/research-and-insights/publications/economic-letter/2016/10/trend-job-growth-where-is-normal/))
 
-2. [**letter/2016/october/trend-job-growth-where-is-normal/**](letter/2016/october/trend-job-growth-where-is-normal/)
+2. [**https://www.federalreserve.gov/newsevents/speech/waller20240116a.htm**](https://www.federalreserve.gov/newsevents/speech/waller20240116a.htm)
 
-3. [**https://www.federalreserve.gov/newsevents/speech/waller20240116a.htm**](https://www.federalreserve.gov/newsevents/speech/waller20240116a.htm)
+3. [**https://www.federalreserve.gov/newsevents/speech/kugler20240207a.htm**](https://www.federalreserve.gov/newsevents/speech/kugler20240207a.htm)
 
-4. [**https://www.federalreserve.gov/newsevents/speech/kugler20240207a.htm**](https://www.federalreserve.gov/newsevents/speech/kugler20240207a.htm)
+4. [**https://www.federalreserve.gov/monetarypolicy/fomcpresconf20240131.htm**](https://www.federalreserve.gov/monetarypolicy/fomcpresconf20240131.htm)
 
-5. [**https://www.federalreserve.gov/monetarypolicy/fomcpresconf20240131.htm**](https://www.federalreserve.gov/monetarypolicy/fomcpresconf20240131.htm)
-
-**Google doc backup: https://docs.google.com/document/d/1IRgwqOf9zSLBf6zeM8mOVmH0j1ULXadTMNqyKLDQBIQ/edit?usp=sharing**
+[**Google doc backup: https://docs.google.com/document/d/1IRgwqOf9zSLBf6zeM8mOVmH0j1ULXadTMNqyKLDQBIQ/edit?usp=sharing**](https://docs.google.com/document/d/1IRgwqOf9zSLBf6zeM8mOVmH0j1ULXadTMNqyKLDQBIQ/edit?usp=sharing)
 
