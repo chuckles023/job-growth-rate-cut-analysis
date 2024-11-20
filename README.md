@@ -10,7 +10,7 @@ The concept of trend employment growth is defined as the monthly rate required t
 
 The role of labor force participation, especially among different age groups, is identified as a significant source of variation in trend job growth. The overall participation rate, influenced by demographic changes, impacts the overall trend. Projections based on different scenarios of demographic-specific participation rates range from 57,000 to 106,000 jobs per month, highlighting the impact of factors such as aging populations and changes in participation rates on future job growth. Despite uncertainties,  job growth can slow from recent levels and still be considered at or above trend, indicating a resilient labor market.
 
- On January 16th of this year, Governor Christopher J. Waller discussed the economic outlook based on numbers from late 2023\.  The speaker notes positive trends in real GDP growth, low unemployment (below 4 percent), and core PCE inflation running close to 2 percent for the last six months. The analysis suggests that the economy is on a favorable trajectory, but the sustainability of these trends is uncertain.
+On January 16th of this year, Governor Christopher J. Waller discussed the economic outlook based on numbers from late 2023\.  The speaker notes positive trends in real GDP growth, low unemployment (below 4 percent), and core PCE inflation running close to 2 percent for the last six months. The analysis suggests that the economy is on a favorable trajectory, but the sustainability of these trends is uncertain.
 
 Waller believes that there is an overall trend of moderation in labor market conditions despite a December increase in job creation which he believes is noise against the trend.  October 2023 saw an increase in 105,000 jobs, November saw 173,000, and then December with 216,000.  Despite the rising numbers, Waller expects the reports to be revised down.  Ultimately, Waller sees a balancing of the labor market with variables like payroll gains, wage growth, and labor force participation cooling off.  Labor demand will be a very important factor to keep an eye on as it will have a direct effect on unemployment.  If the demand declines, it is possible that employment will grow more than job vacancies will be filled.  In May 2022, Waller and Andrew Figura(FED Economic Researcher) derived the theoretical relationship between job vacancies and the unemployment rate to determine how restrictive monetary policy would affect unemployment.  They found that restrictive monetary policy shrunk vacancy rate with a small increase in the unemployment rate which would help the FED bring down inflation.  
 
@@ -18,7 +18,7 @@ The FED is still targeting a 2 percent rate of inflation, so any rate cuts will 
 
 On February 7th, Governor Adriana D. Kugler gave a speech on the recent economic developments in the US and Monetary Policy.  Kugler cites a decrease in core PCE inflation as a major indicator of progress in the cooling of inflation.  The moderation of wage growth is one factor helping the recent trend of disinflation.  Like in Waller’s speech, Kugler cites an overall trend of moderation despite recent hikes.  Looking at the Job Openings and Labor Turnover Survey, the ratio of job openings to unemployment has come down closer to pre-pandemic levels indicating a cooling of labor demand along with an increase in labor supply bringing us closer to levels consistent with the target 2 percent inflation.  Kugler concludes that the federal funds rate is likely at its peak and will be reduced appropriately in line with the target inflation rate, but it might stay steady depending on how disinflation continues.  
 
-	Chair of the FED, Jerome Powell, spoke on plans for the near future at the January 31 FOMC press conference.  Like Kugler said, the federal funds rate is likely at its peak and the FED will look at decreasing the rate sometime this year, but they are willing to maintain the current rate depending on how inflation moves in the near future. When asked about when it is likely we will see the first cut, Powell responded that the board will probably not have the confidence to start cuts until after their march meeting.  He repeats that the number of cuts that will happen this year is all based on data coming in the near future and they really want to play it safe with how they implement policy.  However, Powell does state that if they see a weakening in the labor market or persuasively low inflation, they could be driven to cut rates sooner than later.  Powell noted that the median participant on the board wrote that they expect 3 rate cuts this year.  From this press conference, we get a somewhat clearer view of the FED’s intentions moving forward as they monitor both inflation and unemployment levels.
+Chair of the FED, Jerome Powell, spoke on plans for the near future at the January 31 FOMC press conference.  Like Kugler said, the federal funds rate is likely at its peak and the FED will look at decreasing the rate sometime this year, but they are willing to maintain the current rate depending on how inflation moves in the near future. When asked about when it is likely we will see the first cut, Powell responded that the board will probably not have the confidence to start cuts until after their march meeting.  He repeats that the number of cuts that will happen this year is all based on data coming in the near future and they really want to play it safe with how they implement policy.  However, Powell does state that if they see a weakening in the labor market or persuasively low inflation, they could be driven to cut rates sooner than later.  Powell noted that the median participant on the board wrote that they expect 3 rate cuts this year.  From this press conference, we get a somewhat clearer view of the FED’s intentions moving forward as they monitor both inflation and unemployment levels.
 
 
 **Method:**
@@ -31,8 +31,34 @@ To determine how the FED will play with interest rates, we will forecast the gro
 
 shows autoregressive behavior with slow decay of autocorrealtions
 
-| Box-Jenkins \- Estimation by ML Gauss-Newton Convergence in    14 Iterations. Final criterion was  0.0000052 \<=  0.0000100 Dependent Variable PAYEMS Monthly Data From 1995:01 To 2019:12 Usable Observations                       300 Degrees of Freedom                        294 Centered R^2                        0.6724300 R-Bar^2                             0.6668591 Uncentered R^2                      0.7534654 Mean of Dependent Variable       118.72000000 Std Error of Dependent Variable  207.41989210 Standard Error of Estimate       119.71936507 Sum of Squared Residuals         4213821.5536 Log Likelihood                     \-1858.9551 Durbin-Watson Statistic                2.0011 Q(36-5)                               47.0418 Significance Level of Q             0.0324401     Variable                        Coeff      Std Error      T-Stat      Signif \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* 1\.  CONSTANT                      127.2729807   61.6278070      2.06519  0.03978164 2\.  AR{1}                           0.0206967    0.0628132      0.32950  0.74201479 3\.  AR{2}                           0.8740963    0.0618505     14.13240  0.00000000 4\.  MA{1}                           0.3606328    0.0838646      4.30018  0.00002325 5\.  MA{2}                          \-0.4769476    0.0705479     \-6.76062  0.00000000 6\.  MA{3}                           0.1071429    0.0632092      1.69505  0.09112404  |
-| :---- |
+Box-Jenkins \- Estimation by ML Gauss-Newton 
+Convergence in    14 Iterations. 
+Final criterion was  0.0000052 \<=  0.0000100 
+
+Dependent Variable PAYEMS 
+Monthly Data From 1995:01 To 2019:12 
+Usable Observations                       300 
+Degrees of Freedom                        294 
+Centered R^2                        0.6724300 
+R-Bar^2                             0.6668591 
+Uncentered R^2                      0.7534654 
+Mean of Dependent Variable       118.72000000 
+Std Error of Dependent Variable  207.41989210 
+Standard Error of Estimate       119.71936507 
+Sum of Squared Residuals         4213821.5536 
+Log Likelihood                     \-1858.9551 
+Durbin-Watson Statistic                2.0011 
+Q(36-5)                               47.0418 
+Significance Level of Q             0.0324401   
+
+Variable                        Coeff      Std Error      T-Stat      Signif \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* 
+1\.  CONSTANT                      127.2729807   61.6278070      2.06519  0.03978164 
+2\.  AR{1}                           0.0206967    0.0628132      0.32950  0.74201479 
+3\.  AR{2}                           0.8740963    0.0618505     14.13240  0.00000000 
+4\.  MA{1}                           0.3606328    0.0838646      4.30018  0.00002325 
+5\.  MA{2}                          \-0.4769476    0.0705479     \-6.76062  0.00000000 
+6\.  MA{3}                           0.1071429    0.0632092      1.69505  0.09112404  
+
 
 ![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_2.png)![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_3.png)
 ![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_4.png)
@@ -40,11 +66,13 @@ shows autoregressive behavior with slow decay of autocorrealtions
 Through analysis of the residuals of our model we can firstly reject our null hypothesis that the autocorrelations of our model jointly \= 0\.  We can also reject the null hypothesis that the residuals are normal.  Our AR and MA roots are all less than 1 so we know that our model is invertible and covariance stationary.
 
 ![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png)
+
 **Forecast 1:**
 
 Our first forecast is a one step ahead forecast, showing how our model is able to predict recent data.  We see that most of the data of the last 2 years falls within our 95% confidence interval.
 
 ![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_6.png)
+
 **Forecast 2:**
 
 In our second forecast we predict the level of employment for the year of 2024.  The model predicts that February job growth will be over the 200,000 mark and also showing a predicted sustained trend above the normal range of job growth.  Despite this, our error band is still quite large and so we can’t predict with certainty that this will be the case over the next year, especially depending on how the FED reacts to upcoming inflation numbers.
@@ -52,9 +80,9 @@ In our second forecast we predict the level of employment for the year of 2024. 
 
 **forecast for 2024:01     213.01329**
 
-**probability that actual outcome is equal to or less than 200000:       0.06260**
+**probability that actual outcome is equal to or less than 200,000:       0.06260**
 
-**probability that actual outcome is equal to or more than 200000:       0.93740**
+**probability that actual outcome is equal to or more than 200,000:       0.93740**
 
 **Conclusion:**
 
