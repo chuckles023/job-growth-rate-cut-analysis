@@ -21,16 +21,17 @@ On February 7th, Governor Adriana D. Kugler gave a speech on the recent economic
 Chair of the FED, Jerome Powell, spoke on plans for the near future at the January 31 FOMC press conference.  Like Kugler said, the federal funds rate is likely at its peak and the FED will look at decreasing the rate sometime this year, but they are willing to maintain the current rate depending on how inflation moves in the near future. When asked about when it is likely we will see the first cut, Powell responded that the board will probably not have the confidence to start cuts until after their march meeting.  He repeats that the number of cuts that will happen this year is all based on data coming in the near future and they really want to play it safe with how they implement policy.  However, Powell does state that if they see a weakening in the labor market or persuasively low inflation, they could be driven to cut rates sooner than later.  Powell noted that the median participant on the board wrote that they expect 3 rate cuts this year.  From this press conference, we get a somewhat clearer view of the FED’s intentions moving forward as they monitor both inflation and unemployment levels.
 
 
-**Method:**
+## Method:
 
 To determine how the FED will play with interest rates, we will forecast the growth of employment over the next 12 months using the first difference of total employees(nonfarm).  As we know, normal levels of growth range from about 50,000 to 110,000 new jobs every month, and if there is a sustained amount of above trend job growth, unemployment will be pulled below the natural rate.  The level of growth over trend we will be looking for is the 200,000 mark, that can possibly indicate a point where the FED will decide to intervene.  With the FED’s dual mandate of maximum employment and price stability, they will be watching unemployment closely to help determine whether or not they will cut rates. I will also be controlling for pandemic data since it distorts historic data and would have a noticeable impact on the forecast.  
 
-**Econometric Analysis:**
+## Econometric Analysis:
 
 ![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_1.png)
 
-shows autoregressive behavior with slow decay of autocorrealtions
+The first test demonstrates autoregressive behavior, evident in the gradual decay of autocorrelations over time. The slow decline suggests persistence in the data, where current values are strongly influenced by prior observations, indicative of a high degree of temporal dependence.
 
+'''
 Box-Jenkins \- Estimation by ML Gauss-Newton 
 Convergence in    14 Iterations. 
 Final criterion was  0.0000052 \<=  0.0000100 
@@ -51,14 +52,16 @@ Durbin-Watson Statistic                2.0011
 Q(36-5)                               47.0418 
 Significance Level of Q             0.0324401   
 
-Variable                        Coeff      Std Error      T-Stat      Signif \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* 
+Variable                        Coeff      Std Error      T-Stat      Signif 
+
+------------------------------------------------------------------------------------
 1\.  CONSTANT                      127.2729807   61.6278070      2.06519  0.03978164 
 2\.  AR{1}                           0.0206967    0.0628132      0.32950  0.74201479 
 3\.  AR{2}                           0.8740963    0.0618505     14.13240  0.00000000 
 4\.  MA{1}                           0.3606328    0.0838646      4.30018  0.00002325 
 5\.  MA{2}                          \-0.4769476    0.0705479     \-6.76062  0.00000000 
 6\.  MA{3}                           0.1071429    0.0632092      1.69505  0.09112404  
-
+'''
 
 ![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_2.png)![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_3.png)
 ![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_4.png)
@@ -66,6 +69,8 @@ Variable                        Coeff      Std Error      T-Stat      Signif \*\
 Through analysis of the residuals of our model we can firstly reject our null hypothesis that the autocorrelations of our model jointly \= 0\.  We can also reject the null hypothesis that the residuals are normal.  Our AR and MA roots are all less than 1 so we know that our model is invertible and covariance stationary.
 
 ![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_5.png)
+
+## Forecast Results
 
 **Forecast 1:**
 
@@ -77,19 +82,18 @@ Our first forecast is a one step ahead forecast, showing how our model is able t
 
 In our second forecast we predict the level of employment for the year of 2024.  The model predicts that February job growth will be over the 200,000 mark and also showing a predicted sustained trend above the normal range of job growth.  Despite this, our error band is still quite large and so we can’t predict with certainty that this will be the case over the next year, especially depending on how the FED reacts to upcoming inflation numbers.
 
+forecast for 2024:01     213.01329
 
-**forecast for 2024:01     213.01329**
+probability that actual outcome is equal to or less than 200,000:       0.06260
 
-**probability that actual outcome is equal to or less than 200,000:       0.06260**
+probability that actual outcome is equal to or more than 200,000:       0.93740
 
-**probability that actual outcome is equal to or more than 200,000:       0.93740**
-
-**Conclusion:**
+## Conclusion:
 
 After consulting our forecasts and applying context from the FED, we can see that the predicted growth in employment could put enough downward pressure on unemployment to cause the FED to step in and make a rate cut.  The probability that job growth stays at or above 200,000 per month is 93.7%.  This is promising as the current portfolio predicts more rate cuts, but I believe that from analyzing what the FED is saying, they will be very patient with rate cuts this year as they try to curb inflation.  While nonfarm payrolls give us important information on one side of the FED’s monetary policy, we need to pay attention to indicators of inflation as the FED is more focused on that front at the moment. 
 
 
-**Sources:**
+## Sources:
 
 1. [**https://www.frbsf.org/research-and-insights/publications/economic-letter/2016/10/trend-job-growth-where-is-normal/**](https://www.frbsf.org/research-and-insights/publications/economic-letter/2016/10/trend-job-growth-where-is-normal/)
 
