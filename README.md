@@ -27,11 +27,11 @@ To determine how the FED will play with interest rates, we will forecast the gro
 
 ## Econometric Analysis:
 
-![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_1.png)
+<img src="https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_1.png" width="60%">
 
 The first test demonstrates autoregressive behavior, evident in the gradual decay of autocorrelations over time. The slow decline suggests persistence in the data, where current values are strongly influenced by prior observations, indicative of a high degree of temporal dependence.
 
-'''
+```
 Box-Jenkins \- Estimation by ML Gauss-Newton 
 Convergence in    14 Iterations. 
 Final criterion was  0.0000052 \<=  0.0000100 
@@ -61,7 +61,7 @@ Variable                        Coeff      Std Error      T-Stat      Signif
 4\.  MA{1}                           0.3606328    0.0838646      4.30018  0.00002325 
 5\.  MA{2}                          \-0.4769476    0.0705479     \-6.76062  0.00000000 
 6\.  MA{3}                           0.1071429    0.0632092      1.69505  0.09112404  
-'''
+```
 
 ![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_2.png)![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_3.png)
 ![](https://github.com/chuckles023/labor-market-fed-cut-analysis/blob/main/images/imageproject2_4.png)
