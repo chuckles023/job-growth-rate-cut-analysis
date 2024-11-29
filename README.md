@@ -116,7 +116,7 @@ Variable                        Coeff      Std Error      T-Stat      Signif
 
 ## Conclusion:
 
-After consulting our forecasts and applying context from the FED, we can see that the predicted growth in employment could put enough downward pressure on unemployment to cause the FED to step in and make a rate cut.  The probability that job growth stays at or above 200,000 per month is 93.7%.  This is promising as the current portfolio predicts more rate cuts, but I believe that from analyzing what the FED is saying, they will be very patient with rate cuts this year as they try to curb inflation.  While nonfarm payrolls give us important information on one side of the FED’s monetary policy, we need to pay attention to indicators of inflation as the FED is more focused on that front at the moment. 
+After consulting our forecasts and applying context from the FED, we can see that the predicted growth in employment could put enough downward pressure on unemployment to cause the FED to step in and make a rate cut.  The probability that job growth stays at or above 200,000 per month is 93.7%.  I believe that from analyzing what the FED is saying, they will be very patient with rate cuts this year as they try to curb inflation.  While nonfarm payrolls give us important information on one side of the FED’s monetary policy, it is important to monitor indicators of inflation as the FED is more focused on that front at the moment. 
 
 
 ## Sources:
